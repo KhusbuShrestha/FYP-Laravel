@@ -1,0 +1,48 @@
+
+    .button{
+        display: inline-block;
+  border-radius: 4px;
+  background-color: #334756;
+  border: none;
+  color: #fafbfe;
+  text-align: center;
+  font-size: 18px;
+  padding: 20px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+
+    }
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  color: #fafbfe
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  /* right: -20px; */
+  left: 20px;
+  transition: 0.5s;
+  color: #fafbfe
+}
+
+.button:hover span {
+  /* padding-right: 25px; */
+  padding-left: 25px;
+  color: #fafbfe
+}
+
+.button:hover span:after {
+  opacity: 1;
+  left: 0;
+  color: #fafbfe
+
+}
+
